@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Gateway Documentation</title>
+</head>
+<body>
+    <h1>PHP API Gateway - Documentation</h1>
+    <p>All requests require a valid API key passed as a header: <code>X-API-Key</code></p>
+
+    <h2>Endpoints</h2>
+    <ul>
+        <li><strong>GET /api/users</strong><br>
+        Returns a list of users.<br>
+        Sample: <code>[{"id":1,"name":"Alice"}]</code></li>
+
+        <li><strong>GET /api/products</strong><br>
+        Returns a list of products.<br>
+        Sample: <code>[{"sku":"A123","productName":"Samsong"}]</code></li>
+    </ul>
+
+    <h2>Error Codes</h2>
+    <ul>
+        <li>401 - Invalid or missing API key</li>
+        <li>429 - Rate limit exceeded</li>
+        <li>404 - Endpoint not found</li>
+    </ul>
+</body>
+</html>
